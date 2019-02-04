@@ -50,7 +50,7 @@ ol li {
 }
 @font-face{
     font-family: AmaliticSC-Bold;
-    src: url(fonts/Amatic_SC/AmaticSC-Bold.ttf);
+    src: url("./fonts/Amatic_SC/AmaticSC-Bold.ttf");
 }
 
 /* body */
@@ -88,12 +88,13 @@ nav {
 
 nav .title {
     font-size: 2em;
+    font-family: 'Quicksand';
     color: var(--mark-write);
 }
 /* logo */
 nav img {
     display: block;
-    width: 60%;
+    width: 40%;
     margin:10vh auto auto auto;
     padding: 0.3vh;
     border-radius: 100%;
@@ -112,12 +113,14 @@ nav ul li {
     background-color: transparent;
     color: var(--toggle-iten-text);
     padding: 0.2vh 0;
+    font-size: 1.5em;
 }
 
 nav ul li a {
     font-family: 'AmaliticSC-Bold';
+    padding-left: 2.5vw;
     position: fixed;
-    width: 25vw;
+    width: 22.5vw;
     color: var(--toggle-iten-text);
 }
 nav a:link {
@@ -125,9 +128,15 @@ nav a:link {
     font-style: none;
 }
 
-nav li:hover {
+nav li a:hover {
     background-color: var(--mark);
     color: var(--hover-bk);
+}
+
+nav dl {
+    margin-left: 1vw;
+    color: var(--mark-dark);
+    font-family: 'Staatliches-Regular';
 }
 #toggleMenu {
     background-color: var(--toggle-nav-2);
@@ -168,7 +177,10 @@ section {
     transition: all ease-in-out 200ms; /*sen isso nao fubnciona */
     -webkit-transition: all ease-in-out 200ms; /*sen isso nao fubnciona */
 }
-
+.identfy-quest {
+    color: var(--mark-dark);
+    font-size: 2em;
+}
 .quest {
     font-size: 1.2em;
 } 
