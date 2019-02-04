@@ -1,0 +1,28 @@
+Kinvo - Programa de desenvolvimento de talentos
+Instruções
+Crie um projeto Web, onde a página principal funciona como um índice para a resolução dos problemas propostos.
+Finalizado o teste, faça o upload do mesmo em um repositório do github e nos envie o link.
+Agora é só aguardar o nosso contato!
+Você pode:
+Utilizar qualquer linguagem de preprocessador css ou css puro;
+Utilizar um task runner ou bundler de sua preferência;
+Ganhe pontos extras
+Estilizando as páginas do seu projeto
+Não utilizando frameworks css, como Bootstrap, etc.
+Questão 1
+O que você aprendeu ontem ou essa semana?
+
+Questão 2
+Fale um pouco sobre o seu ambiente de desenvolvimento preferido? (IDE/Editor, linguagens, tools, SO, etc)
+
+Questão 3
+Uma rei requisitou os serviços de um operário e disse-lhe que pagaria qualquer preço. O operário, que passava necessidades e previsava de alimentos , perguntou ao rei se o pagamento poderia ser feito com grãos de trigo dispostos em um tabuleiro de xadrez, de tal forma que o primeiro quadro deveria conter apenas um grão e os quadros subseqüentes , o dobro do quadro anterior. O rei achou o trabalho barato e pediu que o serviço fosse executado, sem se dar conta de que seria impossível efetuar o pagamento. Faça um algoritmo para calcular o número de grãos que o rei esperava receber.
+
+Questão 4
+Um grupo de empreendedores resolvem projetar um celuar para pessoas com deficiência visual. Você foi contratado para desenvolver esse projeto. Escreva um breve texto contando para os empreendedores que lhe contrataram o que você tem em mente para tal projeto. Como será esse celular, como ele funcionaria, quais seriam as suas características, etc.
+
+Questão 5
+Como você explicaria o que é um Banco de dados para seu sobrinho de 8 anos?
+
+Sucesso!
+
