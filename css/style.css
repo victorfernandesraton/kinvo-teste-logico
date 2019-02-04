@@ -48,8 +48,10 @@ ol li {
     font-family: Staatliches-Regular;
     src: url("./fonts/Staatliches/Staatliches-Regular.ttf");
 }
-
-
+@font-face{
+    font-family: AmaliticSC-Bold;
+    src: url(fonts/Amatic_SC/AmaticSC-Bold.ttf);
+}
 
 /* body */
 body {
@@ -109,12 +111,11 @@ nav ul {
 nav ul li {
     background-color: transparent;
     color: var(--toggle-iten-text);
-    text-transform: uppercase;
     padding: 0.2vh 0;
 }
 
 nav ul li a {
-    font-family: 'Quicksand';
+    font-family: 'AmaliticSC-Bold';
     position: fixed;
     width: 25vw;
     color: var(--toggle-iten-text);
