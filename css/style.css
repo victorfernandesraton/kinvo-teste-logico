@@ -101,7 +101,8 @@ nav img {
     margin:10vh auto auto auto;
     padding: 0.3vh;
     border-radius: 100%;
-    border-style: solid;
+    border-style: outset;
+    border-spacing: 2px;
     border-color: var(--mark);
 }
 
@@ -278,6 +279,14 @@ display: flex;
     margin-top: 0.5vh;
     margin-left: 2vw;
 }
+
+
+.instruction-list {
+    margin: 4vh 2vw;
+}
+
+.spec1 {
+    margin-left: 4vh;}
 
 /* hoover css */
 
