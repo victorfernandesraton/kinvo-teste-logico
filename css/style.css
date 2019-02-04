@@ -15,6 +15,8 @@
     --font-gray: #303030;
     --font-white-gray: #7a7a7a;
 }
+
+
 /* setando o css */
 body {
     overflow: hidden;
@@ -179,15 +181,39 @@ section {
     -webkit-transition: all ease-in-out 200ms; /*sen isso nao fubnciona */
 }
 
-
+.welcome {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+}
 
 .identfy-quest {
     color: var(--mark-dark);
     font-size: 2em;
 }
 .quest {
-    font-size: 1.2em;
+    color: var(--font-white-gray);
+    font-style: italic;
+    font-size: 1.5em;
 } 
+
+.quest::after {
+    content: ' "';
+}
+
+.quest::before {
+    content: ' "';
+}
+
+.spec::after {
+    content: ' "';
+}
+
+.spec::before {
+    content: ' "';
+}
+
+
 .subtitle,
 .subtitle-2,
 .subtitl-3 {
@@ -210,7 +236,7 @@ section {
 }
 
 p {
-    margin: 2vh 0vw;
+    margin: 2vh 2vw;
 }
 
 #skill {
@@ -232,6 +258,17 @@ display: flex;
 .external-link {
     color: var(--font-gray);
     text-decoration: underline solid var(--mark-dark) !important;
+}
+
+.Questao2,
+.Questao3,
+.Questao4 {
+    font-size: 0.8em;
+}
+
+.list {
+    margin-top: 0.5vh;
+    margin-left: 2vw;
 }
 
 /* hoover css */
