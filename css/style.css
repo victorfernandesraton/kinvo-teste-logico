@@ -12,6 +12,7 @@
     --mark-write: #dcdcdc;
     --hover-bk : #0D0D0D;
     --hover : var(--mark);
+    --font-gray: #303030;
 }
 /* setando o css */
 body {
@@ -31,21 +32,21 @@ ol li {
 }
 /* fonts */
 @font-face{
-    font-family: Staatliches;
-    src: url("Staatliches.ttf");
+    font-family: Quicksand;
+    src: url("./fonts/Quicksand/Quicksand-Medium.ttf");
 }
 @font-face {
-    font-family: Reelaway;
-    src:url("Reelaway.ttf");
+    font-family: Roboto-Medium;
+    src:url("./fonts/Roboto/Roboto-Medium.ttf");
 }
 
 @font-face{
-    font-family: Open-sans-Condensed;
-    src: url("OPS-c.ttf");
+    font-family: SF-Compact-Medium;
+    src: url("./fonts/SFCompact/medium.otf");
 }
 @font-face{
-    font-family: poppins;
-    src: url("poppins.ttf");
+    font-family: Staatliches-Regular;
+    src: url("./fonts/Staatliches/Staatliches-Regular.ttf");
 }
 
 
@@ -53,7 +54,8 @@ ol li {
 /* body */
 body {
     background-color: var(--bgcolor);
-    font-family: "Open-sans-Condensed";
+    font-family: 'Roboto-Medium','Arial';
+    color: var(--font-gray);
 }
 /* titulo */
 h1 {
@@ -83,6 +85,7 @@ nav {
 }
 
 nav .title {
+    font-size: 2em;
     color: var(--mark-write);
 }
 /* logo */
@@ -107,9 +110,13 @@ nav ul li {
     background-color: transparent;
     color: var(--toggle-iten-text);
     text-transform: uppercase;
+    padding: 0.2vh 0;
 }
 
 nav ul li a {
+    font-family: 'Quicksand';
+    position: fixed;
+    width: 25vw;
     color: var(--toggle-iten-text);
 }
 nav a:link {
@@ -155,7 +162,6 @@ section {
     max-width:100vw;
     min-height: 100vh;
     padding-top: 5vh;
-    color: #000000;
     position: relative;
     transition: all ease-in-out 200ms;
     transition: all ease-in-out 200ms; /*sen isso nao fubnciona */
