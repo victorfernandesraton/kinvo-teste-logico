@@ -26,77 +26,113 @@
 </nav>
 
 <body>
-    <section class="section" id="BemVindo">
+    <section class="section BemvVindo" id="BemVindo">
         <div>
-            <h1>Olá Dave</h1>
+            <h1>Olá!</h1>
             <hr>
-            <h2>Bem-vindo a resolução de questões do HAL 9000</h2>
+            <h2>Bem-vindo a resolução de questões</h2>
+            <h3>Instruções</h3>
+            <ol id="instruction-list" class="instruction list">
+                <li id="iten-list" class="instruction list itennumber">
+                    Esta página foi desenvolvida a fim de cumprir o teste de admissão da empresa Kinvo
+                </li>
+                <li id="iten-list" class="instruction list itennumber">
+                    A esquerda encontra-se o menu de navegação que pode ser recolhida
+                </li>
+                <li id="iten-list" class="instruction list itennumber">
+                    O scroll está bloqueado
+                </li>
+            </ol>
         </div>
     </section>
-    <section class="section" id="Questao1">
-        <h1><span>Questão 1:</span>O que você aprendeu ontem ou esta semana ?</h1>
-        <h2>A pressa é inimiga da perfeição</h2>
-        <p>A semana que decorreu desde o dia da entrevista na Kinvo foi um tanto frnética (com várias xícaras de café), 
-            mas a coisa mais importante que aprendi foi <span>React exige atenção</span>Estava executando o deafio quando me deparei com uma situação bem simples
-         Fazer com que a cor da barra de navegção alterasse de acordo com o <a>"Scroll"</a> da página e por apenas um discuido na manipulação da arvore DOM virtual
-        acabei ficando preso à este trecho de código por dois dias até perceber que simplesmente não tinha adicionado o evento a lista de eventos.</p>
+    <section class="section Questao1" id="Questao1">
+        <span class="indentfy-quest">Questão 1:</span>
+        <h1 class="quest">O que você aprendeu ontem ou esta semana ?</h1>
+        <h2 class="subtitle">Atenção sempre</h2>
+        <p>A semana que decorreu desde o dia da entrevista na Kinvo foi composta por várias xícaras de café, 
+            mas a coisa mais importante que aprendi foi:</p> 
+            <span class="textmark">Uma boa identação evita futuros problemas</span></p>
+        
+        <p>Estava executando o deafio quando me deparei com uma situação bem simples
+         Fazer com que a cor da barra de navegção fosse alterada de acordo com o <span class="textmark">"Scroll"</span> da página e, devido a falta de identação do código
+          não pude identificar o rpoblema de imediato, assim perdi uma tarde inteira até perceber que simplesmente não tinha adicionado o evento de 
+          captura de scroll á lista de eventos do Javascript.</p>
+
         <h3>Lição aprendida:</h3>
-        <p>Ás vezes <span>"desperdiçar"</span> tempo identando código o faz <span>"ganhar tempo"</span></p>
+        <p>Ás vezes <span class="textmark">"desperdiçar"</span> tempo identando código o faz <span class="textmark">"ganhar tempo"</span></p>
+        <h3>Outras lições importantes</h3>
+        <ul id="instrucition-list" class="instruction list">
+            <li id ="iten-list" class="instruction list nonumber">Manipular propiedades pelo React</li>
+            <li id ="iten-list" class="instruction list nonumber">É mais dificil desenvolver sem framework</li>
+            <li id ="iten-list" class="instruction list nonuber">Manter o diretório organizado</li>
+        </ul>
     </section>
-    <section class="section" id="Questao2">
-        <h1><span>questão 2:</span>Fale um pouco sobre o seu ambiente de desenvolvimento preferido? (IDE/Editor, linguagens, tools, SO, etc)</h1>
-        <h2>Porque Visual Studio Code?</h2>
-        <p>Na minha humilde jornada pelo conhecimento já ultilizei várias IDE's e descobri que a melhor IDE é aquela que atende
-            as suas necessidades. O Visual Studio Code ou simplesmente VScode da microsoft é a melhor IDE em inha opinião.
+    <section class="section questao2" id="Questao2">
+        <span class="identfy-quest">questão 2:</span>
+        <h1 class="quest">Fale um pouco sobre o seu ambiente de desenvolvimento preferido? (IDE/Editor, linguagens, tools, SO, etc)</h1>
+        <h2 class="subtitle">Porque Visual Studio Code?</h2>
+        <p>Na minha jornada pelo conhecimento já ultilizei várias IDE's e ambientes e percebi que a melhor IDE é relativa à sua necessidade.</p> 
+        <h3 class="subtitle-2">No meu caso, preciso de algo que:</h3>
         </p>
-        <h3>Gratuito e aberto</h3>
-        <p>O VScode é um editor de texto gratuito e de código aberto, ou seja, enquanto houver uma comunidade interessada em tal ferramenta ela continuará exiostindo.
-            Outra vantagem acerca disso é que por ser open-sorce, diferente das IDE's do mercado que se limitam a uma ou um conjunto de linguagens, com um pouco de conhecimento
-         e paciência é possivél fazer de TUDO, de progamação web á Phyton e Typescript. Sem falar que é divertido costumizar as coisas <span>e passar 2 horas ecolhendo tema de cores</span></p>
-         <h3>Eficiente</h3>
-         <p>Ainda que fique atrás (por muito pouco) de editores de texto como Sublime Text e Notepad++, se pensarmos no conjunto de plugins oficiais e da comunidade disponíveis, a coisa se torna até desleal para os concorrentes.</p>
-         <h3>Outros motivos</h3>
-         <ul>
-             <li>integração nativa com git e github</li>
-             <li>Funciona em qualquer desktop ou PC</li>
-             <li>Ferramentas absurdamente incríveis como LiveShare e UMLmaker</li>
-         </ul>
+        <ul id="instrucition-list" class="instruction list">
+            <li id="iten-list" class="instruction list nonumber">
+                Atenda multiplas tecnologias e linguagens
+            </li>
+            <li id="iten-list" class="instruction list nonumber">
+                integração nativa com git e github
+            </li>
+            <li id="iten-list" class="instruction list nonumber">
+                Funciona em qualquer desktop ou PC
+            </li>
+        </ul>
+        <p>Por estes (e mais alguns) motivos, meu ambiente de desenvolvimento gira em torno do editor de texto open-source <a>Visual Studio Code</a> desenvolvido pela <a class="external-link">Microsoft</a></p>
     </section>
-    <section class="section" id="Questao3">
-        <h1><span>Questão 3:</span>Uma rei requisitou os serviços de um operário e disse-lhe que pagaria qualquer preço. O operário, que passava necessidades e previsava de alimentos , perguntou ao rei se o pagamento poderia ser feito com grãos de trigo dispostos em um tabuleiro de xadrez, de tal forma que o primeiro quadro deveria conter apenas um grão e os quadros subseqüentes , o dobro do quadro anterior. O rei achou o trabalho barato e pediu que o serviço fosse executado, sem se dar conta de que seria impossível efetuar o pagamento. Faça um algoritmo para calcular o número de grãos que o rei esperava receber.</h1>
-            <h2>Coitado do rei</h2>
+    <section class="section Questao3" id="Questao3">
+        <span class="identfy-quest">Questão 3:</span>
+        <h1 class="quest">Uma rei requisitou os serviços de um operário e disse-lhe que pagaria qualquer preço. O operário, que passava necessidades e precisava de alimentos , perguntou ao rei se o pagamento poderia ser feito com grãos de trigo dispostos em um tabuleiro de xadrez, de tal forma que o primeiro quadro deveria conter apenas um grão e os quadros subseqüentes , o dobro do quadro anterior. O rei achou o trabalho barato e pediu que o serviço fosse executado, sem se dar conta de que seria impossível efetuar o pagamento. Faça um algoritmo para calcular o número de grãos que o rei esperava receber.</h1>
+            <h2 class="subtitle">Coitado do rei</h2>
             <p>
-                A situação trata de um crescimento geomério ou uma soma de um progressões geométricas, dessa forma teriamos: 1 grão no primeiro dia, 2 no segundo, 4 no terceiro e assim por diante.
+                A situação trata da soma de uma progressão geométrica, dessa forma teriamos: 1 grão no primeiro dia, 2 no segundo, 4 no terceiro e assim por diante.
             </p>
-            <p>Ex: (1 X 2) + (2 X 2) + (4 X 2)...</p>
-        <p>Dessa forma a situação matemática é dada por uma soma de termos dessa progressão aritimética</p>
-        <h3>Matemáticamente teremos: </h3><span>Sn = a1(q^n -1)</span>
-        <h4>onde</h4>
-        <ul>
-            <li><span>Sn</span> - Total da soma dos termos</li>
-            <li><span>a1</span> - Valor do primeiro termo = 1</li>
-            <li><span>q</span> - Termo razão = 2</li>
-            <li><span>n</span> - Número de termos</li>
+            <span class="math">(1 x 2) + (2 x 2) + (4 x 2)...</span>
+        <h3 class="subtitle-2">Matemáticamente teremos:</h3>
+        <span class="math">Sm = a1(q^n -1)</span>
+        <h4 class="subtitle-3">onde</h4>
+        <ul id="instrucition-list" class="instruction list">
+            <li id="iten-list" class="instruction list nonumber">
+                <span class="mark">Sm</span> - Total da soma dos termos
+            </li>
+            <li id="iten-list" class="instruction list nonumber">
+                <span class="mark">a1</span> - Valor do primeiro termo = 1
+            </li>
+            <li id="iten-list" class="instruction list nonumber">
+                <span class="mark">q</span> - Termo razão = 2
+            </li>
+            <li id="iten-list" class="instruction list nonumber">
+                <span class="mark">n</span> - Número de termos
+            </li>
         </ul>
         <p>Considerando um tabuleiro de xadrez 8x8, ou seja 64 casas teremos:</p>
-        <span>Sn = a1(2^64 -1) = 18446744073709551616</span>
-        <p>Considerando a estimativa de que uma tonelada é composta por 15432359 grãos o engenhoso operário terá 1195328858906,76 toneladas de trigo </p>
+        <span class="math">Sn = a1(2^64 -1) = 1,8.446.744.073.709.551.616 ou 1,8x10^19</span>
+        <p>Considerando a estimativa de que uma tonelada é composta por 15.432.359 grãos o engenhoso operário terá 1.195.328.858.906,76 toneladas de trigo </p>
     </section>
-    <section class="section" id ="Questao4">
-        <h1><span>Qestão 4:</span>Um grupo de empreendedores resolvem projetar um celuar para pessoas com deficiência visual. Você foi contratado para desenvolver esse projeto. Escreva um breve texto contando para os empreendedores que lhe contrataram o que você tem em mente para tal projeto. Como será esse celular, como ele funcionaria, quais seriam as suas características, etc.</h1>
-        <h2>Assistente pessoa</h2>
+    <section class="section Questao4" id ="Questao4">
+        <span class="identfy-quest">Qestão 4:</span>
+        <h1 class="quest">Um grupo de empreendedores resolvem projetar um celuar para pessoas com deficiência visual. Você foi contratado para desenvolver esse projeto. Escreva um breve texto contando para os empreendedores que lhe contrataram o que você tem em mente para tal projeto. Como será esse celular, como ele funcionaria, quais seriam as suas características, etc.</h1>
+        <h2 class="subtitle">Assistente pessoa</h2>
         <p>A tecnologia mais eficiente para resolver o problema seria a construção de um aparelho com assiente de voz que contenha todas as funcionalidades e controle do sistema</p>
-        <h2>Designer</h2>
+        <h2 class="subtitle">Designer</h2>
         <p>Ainda que seja um smartphone, o formato de seu visor deveria ser mais proporcional, diferente dos modelos atuais do mercado. A justificativa seria um formato físico que permita uma
             maior fluidez no que diz respeito á ampliação da tela no modo "Aumentado",  facilitando a leitura e o trabalho com o conteúdo
         </p>
-        <h2>Versão E-ink</h2>
+        <h2 class="subtitle">Versão E-ink</h2>
         <p>A tecnmologia E-ink (tinta eletrônica em livre tradução) está presente de forma limitada à dispositivos de leitura de conteúdo digital (a maioria Amazon kindle). Tal tecnologia substitui o display de LED por um display de 3 camadas que é menos prejudicial à visão humana, assim trazendo mais conforto e qualidade ao usuário portador de deficiência (ainda que tal uso eleve o preço do produto com relação aos possíveis concorrentes</p>
-        <h2>Cores da interface</h2>
+        <h2 class="subtitle">Cores da interface</h2>
         <p>Considerando usuários portadores de dautonismo, o aparelho poderia conter um "Modo dautônico" e modo "Preto e branco" </p>
     </section>
-    <section class="section" id="Questao5">
-        <h1><span>Questão 5:</span>Como você explicaria o que é um Banco de dados para seu sobrinho de 8 anos?</h1>
+    <section class="section Questao5" id="Questao5">
+        <span class="qu">Questão 5:</span>
+        <h1>Como você explicaria o que é um Banco de dados para seu sobrinho de 8 anos?</h1>
         <h2>Como um grande guarda volume...</h2>
         <p>Um banco de dados seria um grande guarda-volume de informações bem organizado. Assim usamos "gavetas" para os bancos de dados, "pastas" para as tabelas e dentro dessa pasta teriamos uma lista arrumadas parecendo um jogo de batalha naval
             assim para achar um determinado valor teriamos que dizer ao computador qual a gaveta, qual a pasta e escolher as coordenadas dentro da lista

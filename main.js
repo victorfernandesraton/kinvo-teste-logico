@@ -8,13 +8,24 @@ function alter_content_by(ref,sheet,value) {
 // navbar atributos
 function toggleMenu() {
     if (toggleStatus == null || toggleStatus == 1) {
-        document.getElementById("menu").style.left = "-30vw";
+        document.getElementById("menu").style.left = "-25vw";
         alter_content_by("section","left","5vw");
+        alter_content_by("section","width","90vw");
+        alter_content_by("section","fontSize","1.2em");
+        alter_content_by(".Questao3","fontSize","1em");
+        alter_content_by(".Questao4","fontSize","1em");
         toggleStatus = 0;
     }
     else if (toggleStatus == 0) {
         document.getElementById("menu").style.left = "0";
-        alter_content_by("section","left","35vw");
+        alter_content_by("section","left","30vw");
+        alter_content_by("section","width","60vw");
+        alter_content_by("section","fontSize","1em");
+        alter_content_by(".Questao3","fontSize","0.8em");
+        alter_content_by(".Questao4","fontSize","0.8em");
+
+
+
         toggleStatus = 1;
     }
 }
@@ -42,7 +53,13 @@ function scroll_function() {
 // funçaõ inicializadora
 function init() {
     scroll_function();
-    alter_content_by("section","left","35vw");
+    alter_content_by("section","left","30vw");
+    alter_content_by("section","width","60vw");
+    alter_content_by(".Questao3","fontSize","0.8em");
+    alter_content_by(".Questao4","fontSize","0.8em");
+
+
+
 }
 // inicializando
 init();
