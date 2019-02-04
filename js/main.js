@@ -14,8 +14,9 @@ function toggleMenu() {
         alter_content_by("section","fontSize","1.2em");
         alter_content_by(".toggleMenu","opacity","0.7");
         alter_content_by(".Questao2","fontSize","1em");
-        alter_content_by(".Questao3","fontSize","1em");
+        alter_content_by(".Questao3","fontSize","0.8em");
         alter_content_by(".Questao4","fontSize","0.9em");
+        alter_content_by(".modal-content","marginLeft","5vw");
         toggleStatus = 0
     }
     else if (toggleStatus == 0) {
@@ -26,6 +27,7 @@ function toggleMenu() {
         alter_content_by(".Questao2","fontSize","0.8em");
         alter_content_by(".Questao3","fontSize","0.8em");
         alter_content_by(".Questao4","fontSize","0.8em");
+        alter_content_by(".modal-content","marginLeft","30vw");
 
         toggleStatus = 1;
     }
@@ -51,12 +53,31 @@ function scroll_function() {
         return document.querySelector(id).offsetTop;
     }
 }
+
+// moldal
+var modal = document.getElementById('myModal');
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
 // funçaõ inicializadora
 function init() {
     scroll_function();
     alter_content_by("section","left","30vw");
     alter_content_by("section","width","65vw");
+    alter_content_by(".modal-content","marginLeft","30vw");
 }
+
 // inicializando
 init();
 // variaveis iniciais
