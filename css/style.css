@@ -213,6 +213,14 @@ section {
     content: ' "';
 }
 
+.math {
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    font-style: oblique;
+    font-family: 'Times New Roman';
+    font-size: 1.5em;
+}
 
 .subtitle,
 .subtitle-2,
