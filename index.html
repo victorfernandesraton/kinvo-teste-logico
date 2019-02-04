@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" rel="stylesheet" type="text/css" href="./css/style.css" />
 </head>
-<div id="toggleMenu" onclick="toggleMenu()"></div>
-<!-- menu -->
-<nav id="menu" class="menu">
-    <!-- titulo -->
-    <h1>Victor Fernandes Baião Raton</h1>
-    <!-- itens -->
-    <h2>Início</h2>
-    <ul>
-        <li><a href="#BemVindo">Bem-Vindo</a></li>
-    </ul>
-    <h2>Questões</h2>
-    <ul>
-        <li><a href="#Questao1">Questão 1</a></li>
-        <li><a href="#Questao2">Questão 2</a></li>
-        <li><a href="#Questao3">Questão 3</a></li>
-        <li><a href="#Questao4">Questão 4</a></li>
-        <li><a href="#Questao5">Questão 5</a></li>
-        
-    </ul>
-    <h2>Sobre o autor</h2>
-</nav>
-
 <body>
+    <div class="toggleMenu" id="toggleMenu" onclick="toggleMenu()">
+        <div class="pixel-line"></div>
+        <div class="pixel-line"></div>
+        <div class="pixel-line"></div>
+    </div>
+    <!-- menu -->
+    <nav id="menu" class="menu">
+        <img alt="" id="logo" src="./css/img/logo.jpeg">
+        <!-- titulo -->
+        <h1 class="menu title">Victor Fernandes Baião Raton</h1>
+        <!-- itens -->
+        <ul>
+            <dl class="list-title">Inicio</dl>
+            <li><a href="#BemVindo">Bem-Vindo</a></li>
+            <li><a href="#BemVindo">sobre o autor</a></li>
+
+        </ul>
+        <ul>
+            <dl class="list-title">Questões</dl>
+            <li><a href="#Questao1">Questão 1</a></li>
+            <li><a href="#Questao2">Questão 2</a></li>
+            <li><a href="#Questao3">Questão 3</a></li>
+            <li><a href="#Questao4">Questão 4</a></li>
+            <li><a href="#Questao5">Questão 5</a></li>            
+        </ul>
+    </nav>
+        
     <section class="section BemvVindo" id="BemVindo">
         <div>
             <h1>Olá!</h1>
@@ -49,14 +54,11 @@
         <span class="indentfy-quest">Questão 1:</span>
         <h1 class="quest">O que você aprendeu ontem ou esta semana ?</h1>
         <h2 class="subtitle">Atenção sempre</h2>
-        <p>A semana que decorreu desde o dia da entrevista na Kinvo foi composta por várias xícaras de café, 
-            mas a coisa mais importante que aprendi foi:</p> 
+        <p>A semana que decorreu desde o dia da entrevista na Kinvo foi composta por várias xícaras de café, mas a coisa mais importante que aprendi foi:</p> 
             <span class="textmark">Uma boa identação evita futuros problemas</span></p>
         
         <p>Estava executando o deafio quando me deparei com uma situação bem simples
-         Fazer com que a cor da barra de navegção fosse alterada de acordo com o <span class="textmark">"Scroll"</span> da página e, devido a falta de identação do código
-          não pude identificar o rpoblema de imediato, assim perdi uma tarde inteira até perceber que simplesmente não tinha adicionado o evento de 
-          captura de scroll á lista de eventos do Javascript.</p>
+         Fazer com que a cor da barra de navegção fosse alterada de acordo com o <span class="textmark">"Scroll"</span> da página e, devido a falta de identação do código não pude identificar o problema de imediato, assim perdi uma tarde inteira até perceber que simplesmente não tinha adicionado o evento de captura de scroll á lista de eventos do Javascript.</p>
 
         <h3>Lição aprendida:</h3>
         <p>Ás vezes <span class="textmark">"desperdiçar"</span> tempo identando código o faz <span class="textmark">"ganhar tempo"</span></p>
@@ -90,7 +92,7 @@
     <section class="section Questao3" id="Questao3">
         <span class="identfy-quest">Questão 3:</span>
         <h1 class="quest">Uma rei requisitou os serviços de um operário e disse-lhe que pagaria qualquer preço. O operário, que passava necessidades e precisava de alimentos , perguntou ao rei se o pagamento poderia ser feito com grãos de trigo dispostos em um tabuleiro de xadrez, de tal forma que o primeiro quadro deveria conter apenas um grão e os quadros subseqüentes , o dobro do quadro anterior. O rei achou o trabalho barato e pediu que o serviço fosse executado, sem se dar conta de que seria impossível efetuar o pagamento. Faça um algoritmo para calcular o número de grãos que o rei esperava receber.</h1>
-            <h2 class="subtitle">Coitado do rei</h2>
+            <h2 class="subtitle">Resolução</h2>
             <p>
                 A situação trata da soma de uma progressão geométrica, dessa forma teriamos: 1 grão no primeiro dia, 2 no segundo, 4 no terceiro e assim por diante.
             </p>
@@ -100,21 +102,19 @@
         <h4 class="subtitle-3">onde</h4>
         <ul id="instrucition-list" class="instruction list">
             <li id="iten-list" class="instruction list nonumber">
-                <span class="mark">Sm</span> - Total da soma dos termos
+                <span class="mark">Sm</span> - Total de grãos obtidos
             </li>
             <li id="iten-list" class="instruction list nonumber">
-                <span class="mark">a1</span> - Valor do primeiro termo = 1
+                <span class="mark">a1</span> - Pagamento em grãos do 1º dia = 1
             </li>
             <li id="iten-list" class="instruction list nonumber">
-                <span class="mark">q</span> - Termo razão = 2
+                <span class="mark">q</span> - Razão = 2
             </li>
             <li id="iten-list" class="instruction list nonumber">
-                <span class="mark">n</span> - Número de termos
+                <span class="mark">n</span> - Número de dias
             </li>
         </ul>
-        <p>Considerando um tabuleiro de xadrez 8x8, ou seja 64 casas teremos:</p>
-        <span class="math">Sn = a1(2^64 -1) = 1,8.446.744.073.709.551.616 ou 1,8x10^19</span>
-        <p>Considerando a estimativa de que uma tonelada é composta por 15.432.359 grãos o engenhoso operário terá 1.195.328.858.906,76 toneladas de trigo </p>
+        <a id="algoritimo" class="internl-link">Clique aqui para ver o algorítimo</a>
     </section>
     <section class="section Questao4" id ="Questao4">
         <span class="identfy-quest">Qestão 4:</span>
@@ -142,4 +142,4 @@
     </section>
 </body>
 </html>
-<script src="main.js"></script>
+<script src="./js/main.js"></script>

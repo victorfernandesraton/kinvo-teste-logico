@@ -14,12 +14,13 @@ function toggleMenu() {
         alter_content_by("section","fontSize","1.2em");
         alter_content_by(".Questao3","fontSize","1em");
         alter_content_by(".Questao4","fontSize","1em");
+        alter_content_by(".toggleMenu","opacity","0.7");
         toggleStatus = 0;
     }
     else if (toggleStatus == 0) {
         document.getElementById("menu").style.left = "0";
         alter_content_by("section","left","30vw");
-        alter_content_by("section","width","60vw");
+        alter_content_by("section","width","65vw");
         alter_content_by("section","fontSize","1em");
         alter_content_by(".Questao3","fontSize","0.8em");
         alter_content_by(".Questao4","fontSize","0.8em");
@@ -54,7 +55,7 @@ function scroll_function() {
 function init() {
     scroll_function();
     alter_content_by("section","left","30vw");
-    alter_content_by("section","width","60vw");
+    alter_content_by("section","width","65vw");
     alter_content_by(".Questao3","fontSize","0.8em");
     alter_content_by(".Questao4","fontSize","0.8em");
 
